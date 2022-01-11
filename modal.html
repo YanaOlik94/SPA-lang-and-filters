@@ -1,0 +1,22 @@
+<div id="popUpDialog-bg" ng-show="showPopUpDialog"> 
+  <div id="popUpDialog"> 
+   <div class="content">
+    {{ popUpDialogContent }}
+  </div> 
+   <div class="clearfix">
+    <label for="name">Имя:</label>
+    <input type="text" ng-model='name'><br>
+    <label for="email">Почта:</label>
+    <input type="text" ng-model='email'><br>
+    <label for="msg">Комментарий(не больше 50 символов):</label>
+    <input type="text" ng-model='myText'><br>
+    <p>Ваш отзыв: {{ myText | limitTo:myText }}</p>
+  <div class="pull-left"> 
+      <button class="btn-pos" ng-click="popUpDialogApprove()">Да</button> 
+  </div> 
+  <div class="pull-right"> 
+      <button class="btn-neg" ng-click="closePopUpDialog()">Отменить</button> 
+  </div> 
+   </div> 
+  </div> 
+</div>
