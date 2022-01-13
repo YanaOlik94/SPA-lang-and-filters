@@ -6,8 +6,10 @@
    <div class="clearfix">
     <label for="name">Имя:</label>
     <input type="text" ng-model='name'><br>
+    
     <label for="email">Почта:</label>
     <input type="text" ng-model='email'><br>
+    
     <label for="msg">Комментарий(не больше 50 символов):</label>
     <input type="text" ng-model='myText'><br>
     <p>Ваш отзыв: {{ myText | limitTo:myText }}</p>

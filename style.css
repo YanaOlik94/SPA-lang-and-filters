@@ -1,8 +1,8 @@
 
 
-  .tit {
+  .title {
     font-size: 28px;
-    text-align: center;;
+    text-align: center;
   }
   
   .descript {
@@ -53,6 +53,11 @@
     border-radius: 30px;
     background-color: #2196F3;
 
+    }
+
+  .transl {
+  margin-left: 25px;
+   
     }
 
   /* Toggle */
